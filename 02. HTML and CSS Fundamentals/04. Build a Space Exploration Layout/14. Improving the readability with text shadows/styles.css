@@ -34,4 +34,8 @@ the blur to 4px and the color to black.
 .underline {
     border-bottom: 4px solid white;
 }
+
+.h1-tag {
+    text-shadow: 0px 0px 4px black;
+}
    
