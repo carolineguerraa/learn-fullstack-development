@@ -5,10 +5,18 @@
     <body>
         <div class="container">
             <div>
-                <h3>HOME</h3>
+                <h1>HOME</h1>
+                <h1 id="home">0</h1>
+                <button onclick="changeScore(true, 1)">+1</button>
+                <button onclick="changeScore(true, 2)">+2</button>
+                <button onclick="changeScore(true, 3)">+3</button>
             </div>
             <div>
-                <h3>GUEST</h3>
+                <h1>GUEST</h1>
+                <h1 id="guest">0</h1>
+                <button onclick="changeScore(false, 1)">+1</button>
+                <button onclick="changeScore(false, 2)">+2</button>
+                <button onclick="changeScore(false, 3)">+3</button>
             </div>
         </div>
         <script src="index.js"></script>

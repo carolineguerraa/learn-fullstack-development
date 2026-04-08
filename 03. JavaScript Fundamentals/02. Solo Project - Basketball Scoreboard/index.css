@@ -1,8 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&display=swap');
+
 body {
     margin: 0;
+    background-color: #00165a;
+    color: white;
+    font-family: 'Orbitron', monospace;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    background: #000d35;
+    border: 2px solid #1a3a8a;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 2rem 3rem;
+}
+
+.container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 3rem;
+}
+
+.container > div + div {
+    border-left: 2px solid #1a3a8a;
+}
+
+h1:first-child {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    color: #aac4ff;
+    margin: 0;
+}
+
+h1:nth-child(2) {
+    font-size: 80px;
+    font-weight: 900;
+    color: #f8a000;
+    margin: 0;
+    min-width: 2ch;
+    text-align: center;
+}
+
+button {
+    background: #0c2460;
+    border: 1px solid #1e4090;
+    color: #f8a000;
+    font-family: 'Orbitron', monospace;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+}
+
+button:hover {
+    background: #183070;
+}
+
+button:active {
+    transform: scale(0.96);
 }
