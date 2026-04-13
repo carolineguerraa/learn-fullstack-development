@@ -20,7 +20,11 @@ function getRandomCard() {
 
 function startGame() {
     isAlive = true
-    // Generate two random numbes
+    firstCard = getRandomCard()
+    secondCard = getRandomCard()
+    cards.push(firstCard)
+    cards.push(secondCard)
+    sum = firstCard + secondCard
     // Re-assign the cards and sum variables so that the game can start
     renderGame()
 }
